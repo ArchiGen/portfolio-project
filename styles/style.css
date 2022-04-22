@@ -19,17 +19,38 @@ h1 {
 }
 
 h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+
+  color: #272142;
+}
+
+.hero h2 {
   font-size: 24px;
 }
 
 p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.project-description p {
+  opacity: 80%;
+}
+
+.hero p {
   font-family: var(--secondary-font);
   font-weight: bold;
   color: #272142;
   font-size: 36px;
 }
 
-.header {
+.hero {
   display: block;
   text-align: center;
   padding: 160px 20px;
@@ -44,6 +65,73 @@ p {
   padding: 15px 30px;
 }
 
+.btn-branding-outline {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  padding: 15px 30px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 .btn:hover {
   color: #212529;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-description {
+  padding-top: 80px;
+}
+
+/*medium screen*/
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    padding: 0px 60px;
+  }
+}
+
+/*small screen*/
+
+@media (max-width: 768px) {
+  .project-description {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 42px;
+    text-align: center;
+  }
+
+  h3 {
+    padding: 0px 40px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    text-align: center;
+  }
 }
