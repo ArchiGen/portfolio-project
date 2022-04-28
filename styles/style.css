@@ -63,6 +63,7 @@ p {
   font-size: 18px;
   color: white;
   padding: 15px 30px;
+  text-decoration: none;
 }
 
 .btn-branding-outline {
@@ -89,15 +90,68 @@ p {
   padding-top: 80px;
 }
 
+/*"about me" page*/
+
+.content-container {
+  padding: 160px 20px;
+}
+
+.content-container h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.content-container h2 {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+.content-container h3 {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  color: black;
+}
+
+.content-container .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-container .img-about {
+  border-radius: 18px;
+}
+
+.content-container .img-showcase {
+  border-radius: 9px;
+  margin: 20px auto;
+}
+
 /*medium screen*/
 
 @media (max-width: 992px) {
   h2 {
     font-size: 42px;
+    text-align: center;
   }
 
   h3 {
     padding: 0px 60px;
+    text-align: center;
+  }
+
+  .content-container {
+    display: block;
+    text-align: center;
+  }
+
+  .content-container h1 {
+    font-size: 60px;
+  }
+
+  .content-container img {
+    margin-top: 35px;
   }
 }
 
@@ -129,9 +183,5 @@ p {
 
   .hero h2 {
     font-size: 18px;
-  }
-
-  .btn {
-    text-align: center;
   }
 }
