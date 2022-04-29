@@ -90,6 +90,36 @@ p {
   padding-top: 80px;
 }
 
+nav a {
+  text-decoration: none;
+  color: #212529;
+  opacity: 80%;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+.active {
+  color: var(--secondary-color);
+}
+
+nav {
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+  list-style: none;
+  line-height: 25px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
 /*"about me" page*/
 
 .content-container {
@@ -175,6 +205,10 @@ p {
 
   h3 {
     padding: 0px 40px;
+  }
+
+  nav {
+    justify-content: center;
   }
 
   .hero p {
