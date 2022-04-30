@@ -28,6 +28,10 @@ h3 {
 
   color: #272142;
 }
+h4 {
+  font-family: var(--primary-font);
+  font-size: 48px;
+}
 
 .hero h2 {
   font-size: 24px;
@@ -119,6 +123,49 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+footer {
+  margin: 60px 0;
+}
+
+footer .link {
+  text-decoration: black;
+  color: black;
+  font-size: 34px;
+  font-family: var(--secondary-font);
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer .link:hover {
+  color: var(--secondary-color);
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 80px;
+  margin-bottom: 40px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+.social-links i {
+  margin: 0 20px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+.social-links i:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
 
 /*"about me" page*/
 
@@ -171,9 +218,8 @@ nav ul {
     text-align: center;
   }
 
-  .content-container {
-    display: block;
-    text-align: center;
+  h4 {
+    font-size: 36px;
   }
 
   .content-container h1 {
@@ -183,6 +229,11 @@ nav ul {
   .content-container img {
     margin-top: 35px;
   }
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  border-radius: 5px;
 }
 
 /*small screen*/
@@ -217,5 +268,13 @@ nav ul {
 
   .hero h2 {
     font-size: 18px;
+  }
+
+  footer .link {
+    font-size: 24px;
+  }
+
+  footer .contact-box {
+    padding: 40px;
   }
 }
