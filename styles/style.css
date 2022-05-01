@@ -233,6 +233,10 @@ footer .contact-box p {
 /*medium screen*/
 
 @media (max-width: 992px) {
+  h1 {
+    margin-bottom: 70px;
+  }
+
   h2 {
     font-size: 42px;
   }
@@ -269,14 +273,10 @@ footer .contact-box {
     padding-bottom: 120px;
   }
 
-  h1 {
-    font-size: 50px;
-    text-align: center;
-  }
-
   .content-container h1 {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 45px;
+    text-align: center;
   }
 
   .content-container a {
@@ -286,6 +286,10 @@ footer .contact-box {
   .content-container .social-links a {
     display: inline;
     text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 
   h2 {
