@@ -283,6 +283,10 @@ footer .contact-box {
     display: block;
     text-align: center;
   }
+  .content-container .social-links a {
+    display: inline;
+    text-align: center;
+  }
 
   h2 {
     font-size: 42px;
