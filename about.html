@@ -32,18 +32,24 @@
     <link rel="stylesheet" href="styles/style.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About Kat Penar</title>
   </head>
 
   <body>
-     <div class="container">
+   <div class="container">
       <nav class="d-flex">
-        <p class="d-none d-md-block">KAT PENAR - WEB DEVELOPER</p>
+        <p class="d-none d-md-block" title="logo">
+          KAT PENAR - WEB DEVELOPER
+        </p>
         <ul>
-          <li><a href="/">Home </a></li>
-          <li><a href="/work.html">Work </a></li>
-          <li><a class="active" href="/about.html">About </a></li>
-          <li><a href="/contact.html">Contact </a></li>
+          <li><a title="Homepage" href="/">Home </a></li>
+          <li><a href="/work.html" title="Kat's work">Work </a></li>
+          <li><a class="active" href="/about.html" title="About Kat">About </a></li>
+          <li>
+            <a  href="/contact.html" title="Contact details"
+              >Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -60,12 +66,34 @@
                      Special Agent Archer.
                  </p>
 
-                 <a href="#" class="btn btn-branding">Check my projects</a>
+                 <a href="/work.html" title="works showcase" class="btn btn-branding">Check my projects</a>
             </div>
             
-                <div class="col-lg-6 my-auto">  <img class="img-fluid img-about" src="images/placeholder.png" alt="placeholder"/></div>
+                <div class="col-lg-6 my-auto">  <img class="img-fluid img-about" src="images/Krakow.jpg" alt="image of krakow"/></div>
         </div>
+
+           <footer>
+          <div class="contact-box d-flex justify-content-between">
+              <div>
+              <h4>
+                  Work Inquiry
+              </h4>
+              <p class="text-muted ps-2">Let's work together!</p>
+              </div>
+              <div>
+              <a href="/contact.html" tiltle="to contact page" class="btn btn-branding d-none d-md-flex ">Contact me</a>
+              </div>
+          </div>
+          <a href="/contact.html" tiltle="to contact page" class="btn btn-branding btn-mobile d-block d-md-none ">Contact me</a>
+        <a href="mailto:kape-webdev@gmail.com" title="contact via e-mail" class="link">kape-webdev@gmail.com</a></footer>
+    
+        <div class="social-links text-center">
+            <a href="https://github.com/" title="Link to GitHub Acc"> <i class="fa-brands fa-github"> </i></a>
+            <a href="https://www.linkedin.com/" title="Link to LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" title="Link to Instagram Profile"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </footer>
     </div>
-    </body>
+    
   </body>
 </html>

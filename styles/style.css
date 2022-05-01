@@ -1,9 +1,9 @@
 /*font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif;*/
+font-family: 'Poppins', sans-serif;   #6c63ff; #f9f7fe;*/
 
 :root {
-  --primary-color: #f9f7fe;
-  --secondary-color: #6c63ff;
+  --primary-color: #fcf5ed;
+  --secondary-color: #fc9963;
   --primary-font: "Playfair Display", serif;
   --secondary-font: "Poppins", sans-serif;
 }
@@ -57,12 +57,13 @@ p {
 .hero {
   display: block;
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
   background-color: var(--primary-color);
 }
 
 .btn-branding {
   background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   font-family: var(--secondary-font);
   font-size: 18px;
   color: white;
@@ -75,13 +76,33 @@ p {
   font-family: var(--secondary-font);
   font-size: 18px;
   padding: 15px 30px;
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 4px;
   text-decoration: none;
 }
 
 .btn:hover {
-  color: #212529;
+  color: var(--secondary-color);
+  background-color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.social-contact a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 5px;
+}
+
+.social-contact a:hover {
+  border: solid var(--secondary-color) 1px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
 }
 
 .content {
@@ -92,6 +113,10 @@ p {
 
 .project-description {
   padding-top: 80px;
+}
+
+.main .img-fluid {
+  border-radius: 10px;
 }
 
 nav a {
@@ -130,7 +155,7 @@ footer {
 footer .link {
   text-decoration: black;
   color: black;
-  font-size: 34px;
+  font-size: 28px;
   font-family: var(--secondary-font);
   display: block;
   text-align: center;
@@ -154,7 +179,7 @@ footer .contact-box p {
 
 .social-links i {
   margin: 0 20px;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   border-radius: 20px;
   color: var(--secondary-color);
@@ -170,7 +195,7 @@ footer .contact-box p {
 /*"about me" page*/
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content-container h1 {
@@ -210,7 +235,6 @@ footer .contact-box p {
 @media (max-width: 992px) {
   h2 {
     font-size: 42px;
-    text-align: center;
   }
 
   h3 {
@@ -247,6 +271,12 @@ footer .contact-box {
 
   h1 {
     font-size: 50px;
+    text-align: center;
+  }
+
+  .content-container h1 {
+    font-size: 30px;
+    line-height: 50px;
   }
 
   h2 {
@@ -270,11 +300,11 @@ footer .contact-box {
     font-size: 18px;
   }
 
-  footer .link {
-    font-size: 24px;
-  }
-
   footer .contact-box {
     padding: 40px;
+  }
+
+  footer .link {
+    font-size: 18px;
   }
 }
